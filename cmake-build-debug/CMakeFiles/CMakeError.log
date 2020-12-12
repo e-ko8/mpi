@@ -1,0 +1,52 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /Users/evgeniikokorev/Downloads/Kokorev_3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b6fb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5b6fb.dir/build.make CMakeFiles/cmTC_5b6fb.dir/build
+Building C object CMakeFiles/cmTC_5b6fb.dir/test_mpi.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk   -o CMakeFiles/cmTC_5b6fb.dir/test_mpi.c.o   -c "/Users/evgeniikokorev/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindMPI/test_mpi.c"
+/Users/evgeniikokorev/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindMPI/test_mpi.c:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_5b6fb.dir/test_mpi.c.o] Error 1
+make: *** [cmTC_5b6fb/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /Users/evgeniikokorev/Downloads/Kokorev_3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_48709/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48709.dir/build.make CMakeFiles/cmTC_48709.dir/build
+Building CXX object CMakeFiles/cmTC_48709.dir/test_mpi.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk   -o CMakeFiles/cmTC_48709.dir/test_mpi.cpp.o -c /Users/evgeniikokorev/Downloads/Kokorev_3/cmake-build-debug/CMakeFiles/FindMPI/test_mpi.cpp
+/Users/evgeniikokorev/Downloads/Kokorev_3/cmake-build-debug/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+#include <mpi.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_48709.dir/test_mpi.cpp.o] Error 1
+make: *** [cmTC_48709/fast] Error 2
+
+
+
