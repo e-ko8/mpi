@@ -44,7 +44,7 @@ Testing point-to-point performance, message size = 16777216 bytes:
 ## Теоретическое ускорение
 
 При рассчете ускорения нам требуется подсчитать количество операций. W=T1= Nn*Top         m=[n/p]<= n/p+1
-                                                                        (Wp=7m*Top=(7/n/p+7)Top)
+%                                                                        (Wp=7m*Top=(7/n/p+7)Top)
                                                                         
  При 7 операций по данной формуле мы можем рассчитать, что n=10^9, Ttr = 8,84 * 10^-7 s - internode, 4,67 * 10^-6 s (intranode)
  Top= 3 * 10^-10 s
